@@ -1,1 +1,27 @@
-<p>form-brabo works!</p>
+<div>
+  <p-card class="form-card">
+    <p-header>
+      Login
+    </p-header>
+    
+    <span class="p-float-label">
+      <input type="text" pInputText [(ngModel)]="email" > 
+      <label for="float-input">Email</label>
+    </span>
+
+    <span class="p-float-label">
+      <input type="password" pInputText [(ngModel)]="password"> 
+      <label for="float-input">Senha</label>
+    </span>
+    
+    <button 
+      (click)="handleClickLogin()"
+      pButton
+      pRipple 
+      type="button" 
+      label="Logar" 
+      class="p-button-rounded p-button-success"
+    >
+    </button>
+  </p-card>
+</div>
